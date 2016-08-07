@@ -9,9 +9,8 @@
         ready: function() {
             this.fetchStories();
         },
-        methods: function() {
+        methods: {
             fetchStories: function() {
-
             }
         }
     });

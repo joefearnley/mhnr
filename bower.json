@@ -1,0 +1,22 @@
+{
+  "name": "mhnr",
+  "description": "Mobile Hacker News Reader",
+  "main": "index.js",
+  "authors": [
+    "Joe Fearnley"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/joefearnley/mhnr",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Framework7": "framework7#^1.4.2",
+    "vue": "^1.0.26",
+    "vue-resource": "^0.9.3"
+  }
+}
