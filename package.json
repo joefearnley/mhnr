@@ -1,0 +1,22 @@
+{
+  "name": "mhnr",
+  "version": "1.0.0",
+  "description": "Mobile Hacker News Reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joefearnley/mhnr.git"
+  },
+  "author": "Joe Fearnley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joefearnley/mhnr/issues"
+  },
+  "homepage": "https://github.com/joefearnley/mhnr#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
