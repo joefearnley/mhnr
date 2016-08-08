@@ -47,21 +47,30 @@
                 </div>
 
                 <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-                <div class="pages navbar-through toolbar-through">
+                <div id="stories" class="pages navbar-through toolbar-through">
                     <!-- Page, "data-page" contains page name -->
                     <div data-page="index" class="page">
                         <!-- Scrollable page content -->
                         <div class="page-content">
-                            <div class="list-block">
-                                <a href="#" class="item-link">
-                                    <div class="item-content">
-                                        <div class="item-inner">
-                                            <div class="item-title">Item title</div>
-                                            <div class="item-after">Label</div>
+
+                            <div class="list-block accordion-list">
+                                <ul>
+                                    <li class="accordion-item" v-for="story in stories">
+                                        <a href="#" class="item-content item-link">
+                                            <div class="item-inner">
+                                                <div class="item-title">{{ story.title }}</div>
+                                                <div class="item-after">
+                                                    <span class="badge">{{ story.num_comments }}</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="accordion-item-content">
+                                            <div class="content-block">
+                                                <p>{{ story.title }}</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                              <div class="list-block-label">List block label text goes here</div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
