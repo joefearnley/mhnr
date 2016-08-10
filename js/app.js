@@ -18,6 +18,13 @@
                     }, function errorCallback(error) {
                         console.log(error);
                     });
+            },
+            comments: function(id) {
+                var url = 'http://hn.algolia.com/api/v1/items/' + id;
+                this.$http.get(url)
+                    .then(function successCallback(response) {
+                        console.log(response.data.children);
+                    });
             }
         }
     });

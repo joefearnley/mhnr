@@ -56,7 +56,7 @@
                             <div class="list-block accordion-list">
                                 <ul>
                                     <li class="accordion-item" v-for="story in stories">
-                                        <a href="#" class="item-content item-link">
+                                        <a href="#" class="item-content item-link" @click="comments(story.objectID)">
                                             <div class="item-inner">
                                                 <div class="item-title">{{ story.title }}</div>
                                                 <div class="item-after">
