@@ -35,10 +35,13 @@
                 <div id="stories" class="pages navbar-through toolbar-through">
                     <div data-page="index" class="page">
                         <div class="page-content">
+                            <div class="loading" v-if="loading">
+                                <span class="preloader"></span>
+                            </div>
                             <div class="error" v-if="error">
                                 Error Fetching Stories
                             </div>
-                            <div class="list-block accordion-list" v-if="!error">
+                            <div class="list-block accordion-list" v-if="!error && !loading">
                                 <ul>
                                     <li class="accordion-item" v-for="story in stories">
                                         <a href="#" class="item-content item-link">
