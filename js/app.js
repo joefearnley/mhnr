@@ -19,12 +19,6 @@
                     }, function errorCallback(error) {
                         console.error(error);
                     });
-            },
-            fetchComments: function(id) {
-                var url = 'http://hn.algolia.com/api/v1/items/' + id;
-                this.$http.get(url)
-                    .then(function successCallback(response) {
-                    });
             }
         }
     });
